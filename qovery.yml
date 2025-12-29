@@ -1,0 +1,16 @@
+---
+application:
+  name: "telegram-scanner-bot"
+  project: "telegram-bots"
+
+build:
+  dockerfile_path: "./Dockerfile"
+
+environment:
+  variables:
+    - key: "BOT_TOKEN"
+      value: "${QOVERY_BOT_TOKEN}"
+
+resources:
+  cpu: 250
+  memory: 512
